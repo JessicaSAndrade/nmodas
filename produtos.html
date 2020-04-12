@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <!--responsividade-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bikecraft - Produtos</title>
+  <!--resposavel por tirar os atributos padrões e adaptar a cada navegador-->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <!--resposavel por definir o grid, organizando o código nos padrões definidos-->
+  <link rel="stylesheet" href="css/grid.css" />
+  <!--estilo pré-definido para o home-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--estilo pré-definido para o Sobre-->
+  <link rel="stylesheet" href="css/produtos.css" />
+  <!--estilo pré-definido para o Responsivo-->
+  <link rel="stylesheet" href="css/responsivo.css" />
+  <!-- Adicionando a classe javascript de modo que todo e qualquer browser consiga reconhecer e carregar -->
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+
+<body>
+  <!-- Header inicial -->
+  <header class="header">
+    <div class="container">
+      <a class="grid-4" href="index.html">
+        <img src="img/bikcraft.svg" />
+      </a>
+      <nav class="grid-12 header_menu">
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html" class="menu_ativo">produtos</a></li>
+          <li><a href="portfolio.html">portfólio</a></li>
+          <li><a href="contatos.html">contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Final -->
+  <!-- Introdução Inicial -->
+  <section class="introducao-interna interna_produtos">
+    <div class="container">
+      <h1 data-anime="400" class="fadeInDown">Produtos</h1>
+      <p data-anime="800" class="fadeInDown">Conheça mais sobre os nossos produtos</p>
+    </div>
+  </section>
+  <!-- Introdução Final -->
+  <!-- Produtos Inicial -->
+  <!-- Passeio -->
+  <section class="container produto_item fadeInDown" data-anime="1200">
+    <div class="grid-11">
+      <img src="img/produtos/bikcraft-passeio-1.jpg" alt="Bikecraft Passeio" />
+      <h2>Passeio</h2>
+    </div>
+    <div class="grid-5 produto_icone">
+      <img src="img/produtos/passeio.svg" alt="Bikecraft Passeio" />
+    </div>
+    <div class="grid-8">
+      <img src="img/produtos/bikcraft-passeio-2.jpg" alt="Bikecraft Passeio" />
+    </div>
+    <div class="grid-8 produto_info">
+      <p>
+        No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+        essencial na formula da gestão inovadora da qual fazemos parte
+        inovadora da qual fazemos parte.
+      </p>
+      <ul>
+        <li>Conforto</li>
+        <li>Velocidade</li>
+        <li>Design</li>
+        <li>Versatilidade</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Esporte -->
+  <section class="container produto_item">
+    <div class="grid-11">
+      <img src="img/produtos/bikcraft-esporte-1.jpg" alt="Bikecraft Esporte" />
+      <h2>Esporte</h2>
+    </div>
+    <div class="grid-5 produto_icone">
+      <img src="img/produtos/esporte.svg" alt="Bikecraft Esporte" />
+    </div>
+    <div class="grid-8">
+      <img src="img/produtos/bikcraft-esporte-2.jpg" alt="Bikecraft Esporte" />
+    </div>
+    <div class="grid-8 produto_info">
+      <p>
+        No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+        essencial na formula da gestão inovadora da qual fazemos parte
+        inovadora da qual fazemos parte.
+      </p>
+      <ul>
+        <li>Conforto</li>
+        <li>Velocidade</li>
+        <li>Design</li>
+        <li>Versatilidade</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Retrô -->
+  <section class="container produto_item">
+    <div class="grid-11">
+      <img src="img/produtos/bikcraft-retro-1.jpg" alt="Bikecraft Retrô" />
+      <h2>Retrô</h2>
+    </div>
+    <div class="grid-5 produto_icone">
+      <img src="img/produtos/retro.svg" alt="Bikecraft Retrô" />
+    </div>
+    <div class="grid-8">
+      <img src="img/produtos/bikcraft-retro-2.jpg" alt="Bikecraft Retrô" />
+    </div>
+    <div class="grid-8 produto_info">
+      <p>
+        No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+        essencial na formula da gestão inovadora da qual fazemos parte
+        inovadora da qual fazemos parte.
+      </p>
+      <ul>
+        <li>Conforto</li>
+        <li>Velocidade</li>
+        <li>Design</li>
+        <li>Versatilidade</li>
+      </ul>
+    </div>
+  </section>
+  <!-- Produtos Final -->
+  <!-- Orçamento Inicial-->
+  <section class="orcamento">
+    <div class="container">
+      <h2 class="subtitulo">Orçamento</h2>
+      <form id="form_orcamento" method="POST" action="./enviar-sendgrid.php" class="form grid-8 formphp">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required/>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone"  name="fone" required/>
+        <label class="nao-aparece">Se você não é um robo, deixe em branco</label>
+        <input type="text" class="nao-aparece" name="leaveblank">
+        <label class="nao-aparece">Se você não é um robo, não mude este campo</label>
+        <input type="text" class="nao-aparece" name="dontchange" value="http://">
+        <label for="mensagem">Mensagem</label>
+        <textarea type="text" id="mensagem" name="mensagem" required></textarea>
+        <button type="submit" id="enviar" name="enviar" class="btn">Enviar</button>
+      </form>
+      <div class="orcamento_dados grid-8">
+        <h3>Dados</h3>
+        <span>+55 (81) 92121 2121</span>
+        <span>orcamento@bikecraft.com</span>
+        <h3>MONTE A SUA BIKECRAFT</h3>
+        <p>Escolha as suas especificações</p>
+        <ul>
+          <li>- Cores</li>
+          <li>- Estilo</li>
+          <li>- Medidas</li>
+          <li>- Acessórios</li>
+          <li>- E outros</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Orçamento Final-->
+  <!-- Quebra Inicial -->
+  <section class="quebra">
+    <blockquote class="quote-externo container">
+      <p>
+        "Não tenha nada em sua casa que você não considere útil ou acredita
+        ser bonito"
+      </p>
+      <cite>WILLIAM MORRIS</cite>
+    </blockquote>
+  </section>
+  <!-- Quebra Final -->
+  <!-- Footer Incial -->
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <!-- História -->
+        <div class="grid-8 footer_historia">
+          <h3>
+            NOSSA HISTÓRIA
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            interdum nulla eget turpis luctus, id luctus metus tincidunt.
+            Integer eu lacus et urna hendrerit pulvinar vitae nec ante. Morbi
+            pretium.
+          </p>
+        </div>
+        <!-- Contatos -->
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <ul>
+            <li>- 21 21212-2121</li>
+            <li>- contato@Bikecraft.com</li>
+            <li>- Pernambuco- Olinda</li>
+          </ul>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="grid-4 footer_redes">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li>
+              <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" /></a>
+            </li>
+            <li>
+              <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" /></a>
+            </li>
+            <li>
+              <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Copiright -->
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Bikecraft - 2020 - Alguns direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Final -->
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-form.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
