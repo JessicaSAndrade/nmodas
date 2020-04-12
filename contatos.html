@@ -2,149 +2,144 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <!--responsividade-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Bikecraft - Contatos</title>
-  <!--resposavel por tirar os atributos padrões e adaptar a cada navegador-->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <!--resposavel por definir o grid, organizando o código nos padrões definidos-->
-  <link rel="stylesheet" href="css/grid.css" />
-  <!--estilo pré-definido para o home-->
-  <link rel="stylesheet" href="css/style.css" />
-  <!--estilo pré-definido para o Sobre-->
-  <link rel="stylesheet" href="css/contato.css" />
-  <!--estilo pré-definido para o Responsivo-->
-  <link rel="stylesheet" href="css/responsivo.css" />
-  <!-- Adicionando a classe javascript de modo que todo e qualquer browser consiga reconhecer e carregar -->
-  <script>document.documentElement.classList.add("js")</script>
+    <meta charset="UTF-8" />
+    <!--responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bikecraft - Contatos</title>
+    <!--resposavel por tirar os atributos padrões e adaptar a cada navegador-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!--resposavel por definir o grid, organizando o código nos padrões definidos-->
+    <link rel="stylesheet" href="css/grid.css" />
+    <!--estilo pré-definido para o home-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--estilo pré-definido para o Sobre-->
+    <link rel="stylesheet" href="css/contato.css" />
+    <!--estilo pré-definido para o Responsivo-->
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <!-- Adicionando a classe javascript de modo que todo e qualquer browser consiga reconhecer e carregar -->
+    <script>
+        document.documentElement.classList.add("js")
+    </script>
 </head>
 
 <body>
-  <!-- Header inicial -->
-  <header class="header">
-    <div class="container">
-      <a class="grid-4" href="index.html">
-        <img src="img/bikcraft.svg" />
-      </a>
-      <nav class="grid-12 header_menu">
-        <ul>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="produtos.html">produtos</a></li>
-          <li><a href="portfolio.html">portfólio</a></li>
-          <li><a href="contatos.html" class="menu_ativo">contatos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- Header Final -->
-  <!-- Introdução Inicial -->
-  <section class="introducao-interna interna_contato">
-    <div class="container">
-      <h1 data-anime="400" class="fadeInDown">Contato</h1>
-      <p data-anime="800" class="fadeInDown">Tire suas dúvidas com a gente</p>
-    </div>
-  </section>
-  <!-- Introdução Final -->
-  <!-- Orçamento Inicial-->
-  <section data-anime="1200" class="contato container fadeInDown">
-    <form id="form_orcamento" method="POST" action="./enviar-sendgrid.php" class="contato_form grid-8 formphp">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required />
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required />
-      <label for="telefone">Telefone</label>
-      <input type="text" id="telefone" name="fone" required />
-      <label class="nao-aparece">Se você não é um robo, deixe em branco</label>
-      <input type="text" class="nao-aparece" name="leaveblank">
-      <label class="nao-aparece">Se você não é um robo, não mude este campo</label>
-      <input type="text" class="nao-aparece" name="dontchange" value="http://">
-      <label for="mensagem">Mensagem</label>
-      <textarea type="text" id="mensagem" name="mensagem" required></textarea>
-      <button type="submit" id="enviar" name="enviar" class="btn btn-preto">Enviar</button>
-    </form>
-    <div class="contato_dados grid-8">
-      <h3>Dados</h3>
-      <span>+55 (81) 92121 2121</span>
-      <span class="dados_email">orcamento@bikecraft.com</span>
-      <span>Rua Ali perto - Beberibe</span>
-      <span>Recife - PE - Brasil</span>
-      <h3>Redes Sociais</h3>
-      <ul>
-        <li>
-          <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" /></a>
-        </li>
-        <li>
-          <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" /></a>
-        </li>
-        <li>
-          <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" /></a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- Orçamento Final-->
-  <!-- Mapa IniciaL -->
-  <section class="container contato_mapa">
-    <a class="grid-16" href="http://google.com.br" target="_blank"><img src="img/endereco-bikcraft.jpg"
-        alt="Endereço" /></a>
-  </section>
-  <!-- Mapa Final -->
-  <!-- Footer Incial -->
-  <footer>
-    <div class="footer">
-      <div class="container">
-        <!-- História -->
-        <div class="grid-8 footer_historia">
-          <h3>
-            NOSSA HISTÓRIA
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            interdum nulla eget turpis luctus, id luctus metus tincidunt.
-            Integer eu lacus et urna hendrerit pulvinar vitae nec ante. Morbi
-            pretium.
-          </p>
+    <!-- Header inicial -->
+    <header class="header">
+        <div class="container">
+            <a class="grid-4" href="index.html">
+                <img class="logomarca" src="img/1.svg" />
+            </a>
+            <nav class="grid-12 header_menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="contatos.html">contatos</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- Contatos -->
-        <div class="grid-4 footer_contato">
-          <h3>Contato</h3>
-          <ul>
-            <li>- 21 21212-2121</li>
-            <li>- contato@Bikecraft.com</li>
-            <li>- Pernambuco- Olinda</li>
-          </ul>
+    </header>
+    <!-- Header Final -->
+    <!-- Introdução Inicial -->
+    <section class="introducao-interna interna_contato">
+        <div class="container">
+            <h1 data-anime="400" class="fadeInDown">Contato</h1>
+            <p data-anime="800" class="fadeInDown">Tire suas dúvidas com a gente</p>
         </div>
-        <!-- Redes Sociais -->
-        <div class="grid-4 footer_redes">
-          <h3>Redes Sociais</h3>
-          <ul>
-            <li>
-              <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" /></a>
-            </li>
-            <li>
-              <a href="http://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" /></a>
-            </li>
-            <li>
-              <a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/twitter.svg" /></a>
-            </li>
-          </ul>
+    </section>
+    <!-- Introdução Final -->
+    <!-- Orçamento Inicial-->
+    <section data-anime="1200" class="contato container fadeInDown">
+        <form id="form_orcamento" method="POST" action="./enviar-sendgrid.php" class="contato_form grid-8 formphp">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required />
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="fone" required />
+            <label class="nao-aparece">Se você não é um robo, deixe em branco</label>
+            <input type="text" class="nao-aparece" name="leaveblank">
+            <label class="nao-aparece">Se você não é um robo, não mude este campo</label>
+            <input type="text" class="nao-aparece" name="dontchange" value="http://">
+            <label for="mensagem">Mensagem</label>
+            <textarea type="text" id="mensagem" name="mensagem" required></textarea>
+            <button type="submit" id="enviar" name="enviar" class="btn btn-preto">Enviar</button>
+        </form>
+        <div class="contato_dados grid-8">
+            <h3>Dados</h3>
+            <span>+55 (81) 98647-6438</span>
+            <span class="dados_email">nmodas@gmail.com</span>
+            <span>Estrada de Águas compridas - Águas Compridas - 1201</span>
+            <span>Olinda - PE - Brasil</span>
+            <h3>Redes Sociais</h3>
+            <ul>
+                <!-- <li>
+                    <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" /></a>
+                </li> -->
+                <li>
+                    <a href="https://www.instagram.com/n.modass/?hl=pt-br" target="_blank"><img src="img/redes-sociais/instagram.svg" /></a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </div>
-    <!-- Copiright -->
-    <div class="copy">
-      <div class="container">
-        <p class="grid-16">Bikecraft - 2020 - Alguns direitos reservados</p>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer Final -->
-  <script src="./js/simple-anime.js"></script>
-  <script src="./js/simple-form.js"></script>
-  <script src="./js/script.js"></script>
+    </section>
+    <!-- Orçamento Final-->
+    <!-- Mapa IniciaL -->
+    <section class="container contato_mapa">
+        <!-- <a class="grid-16" href="http://google.com.br" target="_blank"><img src="img/endereco-bikcraft.jpg"
+        alt="Endereço" /></a> -->
+        <div class="grid-16">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.108241399093!2d-34.902373085671435!3d-7.9877572818683875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab179b9c81fe2b%3A0xf666011a4618e4b6!2sEstrada%20de%20%C3%81guas%20Compridas%2C%201201%20-%20%C3%81guas%20Compridas%2C%20Olinda%20-%20PE%2C%2053160-800!5e0!3m2!1spt-BR!2sbr!4v1586676685116!5m2!1spt-BR!2sbr"
+                class="estilo_mapa" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+    <!-- Mapa Final -->
+    <!-- Footer Incial -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <!-- História -->
+                <div class="grid-8 footer_historia">
+                    <h3>
+                        NOSSA HISTÓRIA
+                    </h3>
+                    <p>Somos uma empresa comprometida com o cliente, e buscamos sempre ter produtos de qualidade para oferecer. Uma loja de família, para a sua familia!
+                    </p>
+                </div>
+                <!-- Contatos -->
+                <div class="grid-4 footer_contato">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>- (81) 9 8647-6438</li>
+                        <li>- nmodas@gmail.com</li>
+                        <li>- Pernambuco - Olinda</li>
+                    </ul>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="grid-4 footer_redes">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <!-- <li>
+                            <a href="http://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"></a>
+                        </li> -->
+                        <li>
+                            <a href="https://www.instagram.com/n.modass/?hl=pt-br" target="_blank"><img src="img/redes-sociais/instagram.svg"></a>
+                        </li>
+                        <!-- <li><a href="http://twitter.com" target="_blank"><img src="img/redes-sociais/whatsapp.svg"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copiright -->
+        <div class="copy">
+            <div class="container">
+                <p class="grid-16">NModas - 2020 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Final -->
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
